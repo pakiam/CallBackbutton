@@ -1,0 +1,222 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:none;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;text-decoration:none;margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0}
+blockquote:before,blockquote:after,q:before,q:after{content:""}
+*{margin:0;padding:0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block; }
+ol, ul { list-style: none;}
+blockquote, q { quotes: none;}
+:focus { outline: 0;}
+table { border-collapse: collapse; border-spacing: 0;}
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+a{text-decoration:none; position:relative; color:#000;}
+audio,video,canvas {max-width: 100%;}
+
+body{
+    font-size: 14px;
+}
+
+.call-button {
+    position: fixed;
+    left: 50px;
+    bottom: 60px;
+    z-index: 30;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: rgb(255, 128, 171);
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    -webkit-animation: call-button 1.5s 0s ease-out infinite;
+    -moz-animation: call-button 1.5s 0s ease-out infinite;
+    animation: call-button 1.5s 0s ease-out infinite;
+}
+
+.call-button-disabled {
+    font-size: 40px;
+    padding: 20px 32px;
+    cursor: pointer;
+}
+
+.call-button-active {
+    display: none;
+    position: fixed;
+    left: 50px;
+    bottom: 80px;
+    z-index: 30;
+    width: 730px;
+    background-color: pink;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, .6);
+}
+
+.call-button-active form {
+    display: inline-block;
+    padding: 18px 15px;
+}
+
+.fa-phone {
+    -webkit-animation: rotate-fa-phone 1.5s linear infinite;
+    -moz-animation: rotate-fa-phone 1.5s linear infinite;
+    animation: rotate-fa-phone 1.5s linear infinite;
+}
+
+#call-button-active-submit {
+    color: #ffffff;
+    border: none;
+    background: none;
+    padding: 5px 5px;
+    background: #FF4081;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+#call-button-active-submit:hover {
+    color: #FFFFFF;
+    background: #FF40BE;
+}
+
+.phone-mini {
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.fa-close {
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: -6px;
+    vertical-align: middle;
+}
+
+@-webkit-keyframes rotate-fa-phone {
+    0% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    50% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-moz-keyframes rotate-fa-phone {
+    0% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    50% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotate-fa-phone {
+    0% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    25% {
+        -ms-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    50% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    75% {
+        -ms-transform: rotate(-30deg);
+        -webkit-transform: rotate(-30deg);
+        transform: rotate(-30deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@-webkit-keyframes call-button {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px 0px rgba(23, 167, 167, 0);
+    }
+    10% {
+        box-shadow: 0 0 8px 6px pink, 0 0 12px 10px rgba(0, 0, 0, 0), 0 0 12px 14px pink;
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 40px rgba(0, 0, 0, 0), 0 0 0px 40px rgba(23, 167, 167, 0);
+    }
+}
+
+@-moz-keyframes call-button {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px 0px rgba(23, 167, 167, 0);
+    }
+    10% {
+        box-shadow: 0 0 8px 6px pink, 0 0 12px 10px rgba(0, 0, 0, 0), 0 0 12px 14px pink;
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 40px rgba(0, 0, 0, 0), 0 0 0px 40px rgba(23, 167, 167, 0);
+    }
+}
+
+@keyframes call-button {
+    0% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 0px rgba(0, 0, 0, 0), 0 0 0px 0px rgba(23, 167, 167, 0);
+    }
+    10% {
+        box-shadow: 0 0 8px 6px pink, 0 0 12px 10px rgba(0, 0, 0, 0), 0 0 12px 14px pink;
+    }
+    100% {
+        box-shadow: 0 0 8px 6px rgba(23, 167, 167, 0), 0 0 0px 40px rgba(0, 0, 0, 0), 0 0 0px 40px rgba(23, 167, 167, 0);
+    }
+}

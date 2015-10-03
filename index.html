@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Callback button</title>
+</head>
+<!--main-css-->
+<link rel="stylesheet" href="css/style.css"/>
+<!--font awesome css-->
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<body>
+
+<div class="call-button">
+    <div class="call-button-disabled">
+        <i class="fa fa-phone"></i>
+    </div>
+</div>
+<div class="call-button-active">
+    <i class="fa fa-phone phone-mini"></i>
+    <form method="post" action="php/contact.php">
+        Введите ваш телефон и мы перезвоним через 30 секунд: <input id="call-button-phone" type="text" name="call-button-phone" placeholder="+7(911)1111111"/>
+        <button type="submit" id="call-button-active-submit">Отправить</button>
+    </form>
+    <i class="fa fa-close"></i>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
